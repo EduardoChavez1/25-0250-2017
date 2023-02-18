@@ -29,36 +29,56 @@ class _ContainesFState extends State<ContainesF> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Container(
-          alignment: Alignment.center,
-          height: 200,
-          width: 200,
+      backgroundColor: Colors.grey[300],
+      body: Column(
+        children: [
+          Container(
+          height: 100,
           decoration: BoxDecoration(
-            //color: Colors.redAccent,
-            //border: Border.all(color: Colors.black,width: 10),
-            //borderRadius: BorderRadius.circular(15),
-            //shape: BoxShape.circle
+            color: Colors.deepPurple,
             borderRadius: BorderRadius.circular(5),
-            boxShadow: 
-            [
+            boxShadow: [
               BoxShadow(
-              color: Colors.white,
-              offset: Offset(4.0, 4.0),
-              blurRadius: 15.0,
-              spreadRadius: 1.0),              
-              BoxShadow
-              (
-                color: Colors.grey.shade500,
-                offset: Offset(-4.0, -4.0),
-                blurRadius: 15.0,
-                spreadRadius: 1.0),
-            ]
-            ),
-            //child: Text("RECUADRO",
-           // style: TextStyle(fontSize: 15)),
-           
+                  color: Colors.grey.shade500,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+              BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+            ],
+          ),
         ),
+
+       Expanded(
+        flex: 3,
+        child: Container(
+          height: 100,
+          decoration: BoxDecoration(
+            color: Colors.pink,
+           // borderRadius: BorderRadius.circular(5),
+        )
+       ),
+       ),
+      
+
+
+        Expanded(
+          flex: 2,
+          child: Container(
+          height: 100,
+          decoration: BoxDecoration(
+            color: Colors.yellow,
+            borderRadius: BorderRadius.circular(5),
+            boxShadow: [
+             
+            ],
+          )
+        ),
+        ),
+        ],
       ),
     );
   }
