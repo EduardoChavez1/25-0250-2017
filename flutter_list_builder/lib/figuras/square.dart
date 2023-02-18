@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Mifigura extends StatelessWidget {
-  const Mifigura({super.key});
+  
+  final child;
+
+  Mifigura({required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -10,8 +13,11 @@ class Mifigura extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 8.0),
            child: Container
            (
-              height: 700,
+              height: 500,
               color: Colors.yellow,
+              child: Center(child: Text(child,style: TextStyle(fontSize: 20),
+              )
+              ),
            ),
     );
   }

@@ -13,7 +13,7 @@ class ListandBueilder extends StatelessWidget {
     return MaterialApp
     (
       debugShowCheckedModeBanner: false,
-      home:principal(),
+      home:Principal(),
     );
 
   }
