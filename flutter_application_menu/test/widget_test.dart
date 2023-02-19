@@ -8,12 +8,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flutter_introduccion/main.dart';
+import 'package:flutter_application_menu/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const Contenedores());
+    await tester.pumpWidget(FlutterMenu());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
